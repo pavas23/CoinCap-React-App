@@ -70,7 +70,7 @@ export default class Navbar extends React.Component {
                       style={this.style}
                     >
                       <span>
-                        <span style={{ marginRight: "0.8vw", }}>
+                        <span style={{ marginRight: "0.4vw", }}>
                           <i class="fa-solid fa-chart-line"></i>
                         </span>
                         Activity

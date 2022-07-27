@@ -29,15 +29,15 @@ export default class Home extends React.Component {
                     marginTop: "2vh",
                     color:"white"
                 }}>Dashboard</h2>
-                <p style = {{marginLeft: "4vw",color:"whitesmoke"}}>Begin the next gen of your investments with fastest cryptocurrency exchange &nbsp;&nbsp;
+                <p style = {{marginLeft: "4vw",color:"whitesmoke"}}><span id = "headline">Begin the next gen of your investments with fastest cryptocurrency exchange...</span> &nbsp;&nbsp;
                 <span style={{ color: "gold" }}><i id = "icon1" class="fa-brands fa-bitcoin fa-2x" ></i></span>
                 &nbsp;Vs&nbsp; <span style={{ color: "#A30774" }}><i id = "icon2"class="fa-brands fa-ethereum fa-2x"></i></span></p>
                 <div className = "container"> 
                 <div className="row ms-4" style={{ height: 20 + "vh", width: "100%" }}>
                     {this.state.data_arr.map(function (element) {
                         return (
-                            <div className="col-5 my-2" key = {element.id}>
-                                <Card title={element.name} marketCapUsd={element.marketCapUsd} priceUsd={element.priceUsd} rank={element.rank} amtArr = {[]} />
+                            <div className="col-5 my-2" id = "cardcurr" key = {element.id}>
+                                <Card title={element.name} marketCapUsd={element.marketCapUsd} priceUsd={element.priceUsd} rank={element.rank} symbol = {element.symbol} />
                             </div>
                         );
                     })}

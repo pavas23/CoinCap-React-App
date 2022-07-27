@@ -7,7 +7,30 @@
 #icon2{
     animation: rotate2 4s ease-in-out 0s infinite alternate;
 }
+#cardcurr{
+    transition: all 1s;
+}
 
+#cardcurr:hover{
+    transform:scale(1.09);
+    z-index: 2;
+}
+
+#headline{
+    animation: headline 2s ease-in-out 0s infinite alternate;
+}
+
+@keyframes headline {
+    from{
+        width: 0px;
+        overflow: hidden;
+    }
+    to{
+        width: 100%;
+
+
+    }
+}
 
 @keyframes rotate1{
     from{
@@ -27,4 +50,6 @@
         transform:scale(1.5) rotate(0deg);
     }
 }
+
+
 

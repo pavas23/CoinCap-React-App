@@ -1,5 +1,6 @@
 .navbar{
     background-color: black !important;
+    z-index: 3;
 }
 
 
@@ -11,10 +12,9 @@
 @keyframes transformanim {
     from{
         transform: translateX(-1vw);
-
     }
     to{
-        transform:translateX(5vw);
+        transform:translateX(1vw);
 
 
     }

@@ -11,3 +11,13 @@
 button{
     margin-left: 30%;
 }
+
+#aboutus{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top:10%;
+    align-items: flex-start;
+}
