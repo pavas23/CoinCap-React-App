@@ -37,6 +37,9 @@ export default function () {
                         }}>Add coins to your Wallet</span><br />
                             Add bitcoins you've created or exchanged via <br /> credit card </div>
                     </div>
+                    <div>
+                    <i  id = "bitanimation" class="fa-brands fa-bitcoin fa-10x"></i>
+                    </div>
                 </div>
             </div>
         </>

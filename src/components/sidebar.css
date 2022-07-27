@@ -21,3 +21,20 @@ button{
     margin-top:20vh;
     align-items: flex-start;
 }
+
+#bitanimation{
+    margin-top:25vh;
+    margin-left: 5vw;
+    color:gold;
+    animation: bitcoin 4s ease-in-out 0s infinite alternate;
+}
+
+@keyframes bitcoin{
+    from{
+        transform: rotateY(0deg);
+        opacity: 0.3;
+    }
+    to{
+        transform: rotateY(360deg) scale(1.5);
+    }
+}
