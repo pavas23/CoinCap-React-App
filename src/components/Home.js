@@ -1,7 +1,7 @@
 
 import React from 'react'
 import Card from './Card';
-
+import './home.css';
 export default class Home extends React.Component {
 
     constructor() {
@@ -29,7 +29,9 @@ export default class Home extends React.Component {
                     marginTop: "2vh",
                     color:"white"
                 }}>Dashboard</h2>
-                <p style = {{marginLeft: "4vw",color:"whitesmoke"}}>Join the best cryptocurrency exchange...</p>
+                <p style = {{marginLeft: "4vw",color:"whitesmoke"}}>Begin the next gen of your investments with fastest cryptocurrency exchange &nbsp;&nbsp;
+                <span style={{ color: "gold" }}><i id = "icon1" class="fa-brands fa-bitcoin fa-2x" ></i></span>
+                &nbsp;Vs&nbsp; <span style={{ color: "#A30774" }}><i id = "icon2"class="fa-brands fa-ethereum fa-2x"></i></span></p>
                 <div className = "container"> 
                 <div className="row ms-4" style={{ height: 20 + "vh", width: "100%" }}>
                     {this.state.data_arr.map(function (element) {

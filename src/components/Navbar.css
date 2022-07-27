@@ -1,3 +1,21 @@
 .navbar{
     background-color: black !important;
 }
+
+
+
+#rates{
+    animation: transformanim 2s ease-in-out infinite alternate;
+}
+
+@keyframes transformanim {
+    from{
+        transform: translateX(-1vw);
+
+    }
+    to{
+        transform:translateX(5vw);
+
+
+    }
+}

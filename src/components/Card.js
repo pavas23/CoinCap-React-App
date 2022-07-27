@@ -50,8 +50,8 @@ export default function Card(props) {
                                 <span className="card-text col-4" style ={{
                                     color:`${txtcolor}`,
                                     fontWeight:"bold"
-                                }}>${parseInt(props.priceUsd) + 1}</span>
-                                <span className="card-text col-7">Market Cap USD<br />{parseInt(props.marketCapUsd)}</span>
+                                }}>${parseFloat(props.priceUsd).toFixed(3)}</span>
+                                <span className="card-text col-7">Market Cap USD<br />{parseFloat(props.marketCapUsd).toFixed(3)}</span>
                             </span>
                         </div>
                     </div>
