@@ -9,7 +9,7 @@ export default function Rates(props) {
                 color: "white",
 
             }}>
-                {props.symbol}<span style={{ color: "white" }}><i class="fa-solid fa-arrow-right"></i>
+                {props.symbol}<span style={{ color: "white" }}><i className="fa-solid fa-arrow-right"></i>
                 </span><span style = {{color:`${color}`}}>${parseFloat(props.rateUsd).toFixed(3)}</span>&nbsp;&nbsp;
             </span>
         </>

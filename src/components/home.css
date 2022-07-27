@@ -22,8 +22,6 @@
 
 @keyframes headline {
     from{
-        width: 0px;
-        overflow: hidden;
     }
     to{
         width: 100%;

@@ -6,9 +6,12 @@ export default function Carousel() {
     }
     return (
         <>
-            <div id="carouselExampleControls" className="carousel slide col-12" data-bs-ride="carousel" data-bs-interval = "5000" data-bs-onPause ="hover">
+            <div id="carouselExampleControls" className="carousel slide col-12" data-bs-ride="carousel" data-bs-interval="5000" data-bs-onpause="hover">
                 <div className="carousel-inner">
                     <div className="carousel-item active">
+                        <img src="https://newbium.s3.amazonaws.com/584f50b818156235413.jpeg" className="d-block w-100" alt="..." style={myStyle} />
+                    </div>
+                    <div className="carousel-item">
                         <img src="https://wallpaperaccess.com/full/3648367.jpg" style={myStyle} className="d-block w-100" alt="..." />
                     </div>
                     <div className="carousel-item">
@@ -17,11 +20,8 @@ export default function Carousel() {
                     <div className="carousel-item">
                         <img src="https://wallpaperaccess.com/full/3648487.jpg" className="d-block w-100" alt="..." style={myStyle} />
                     </div>
-                    <div className="carousel-item">
-                        <img src="https://cutewallpaper.org/21/cryptocurrency-wallpaper-hd/Bitcoin-Investors-See-a-Future-in-Cryptocurrency.jpg" className="d-block w-100" alt="..." style={myStyle} />
-                    </div>
                 </div>
-                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" style ={{marginLeft:"0"}}>
+                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" style={{ marginLeft: "0" }}>
                     <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span className="visually-hidden">Previous</span>
                 </button>

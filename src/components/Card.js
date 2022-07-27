@@ -4,24 +4,25 @@ import React, { useState } from "react"
 export default function Card(props) {
     const [stateBackground, setColor] = useState("#0c3c4c");
     const[txtcolor,settextcolor] = useState("green");
-    // var i = 0;
-    // var id = 0;
+    var i = props.index;
     function handleonclick(event) {
-        if (stateBackground == "#0c3c4c"){
+        if (stateBackground === "#0c3c4c"){
+            console.log(i);
              setColor("linear-gradient(90deg,#1a5597,#3ad093)");
              settextcolor("white");
-            //  props.amtArr[i] = props.priceUsd;
-            //  i++;
-            //  id++;
-            //  console.log(props.amtArr);
+             props.amtArr[i] = props.priceUsd;
+             props.nameArr[i] = props.title;
+             console.log(props.amtArr);
+             console.log(props.nameArr);
         }
         else {
             setColor("#0c3c4c")
             settextcolor("green");
-            // for(id in props.amtArr){
-            //     props.amtArr[id] = 0;
-            //     console.log(props.amtArr);
-            // }
+            props.amtArr[i] = 0;
+            props.nameArr[i] ="";
+            console.log(props.amtArr);
+            console.log(props.nameArr);
+
         }
     }
 

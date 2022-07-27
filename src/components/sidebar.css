@@ -18,6 +18,6 @@ button{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-top:10%;
+    margin-top:20vh;
     align-items: flex-start;
 }

@@ -56,7 +56,7 @@ export default class Navbar extends React.Component {
                     >
                       <span>
                         <span style={{ marginRight: "0.8vw", }}>
-                          <i class="fa-solid fa-house"></i>
+                          <i className="fa-solid fa-house"></i>
                         </span>
                         Home
                       </span>
@@ -71,7 +71,7 @@ export default class Navbar extends React.Component {
                     >
                       <span>
                         <span style={{ marginRight: "0.4vw", }}>
-                          <i class="fa-solid fa-chart-line"></i>
+                          <i className="fa-solid fa-chart-line"></i>
                         </span>
                         Activity
                       </span>
@@ -84,7 +84,7 @@ export default class Navbar extends React.Component {
                 }}> 
                   {this.state.rate_arr.map((ele) => {
                     return (
-                      <Rates symbol={ele.symbol} rateUsd={ele.rateUsd} />
+                      <Rates symbol={ele.symbol} rateUsd={ele.rateUsd} key = {ele.symbol}/>
                     );
                   })}
                 </span>
