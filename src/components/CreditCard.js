@@ -1,5 +1,5 @@
 
-import './creditCard.css';
+import './css/creditCard.css';
 import chip from './Images/chip.png';
 import visa from './Images/visa.png';
 import map from './Images/map.png';

@@ -1,17 +1,18 @@
 
 import React from 'react'
 import Card from './Card';
-import './home.css';
+import './css/home.css';
 
 export default class Home extends React.Component {
 
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             data_arr: [],
-            amt_arr: new Array(18).fill(0),
-            name_arr: [],
-            ans: 0,
+            amt_arr: this.props.amt_arr,
+            name_arr: this.props.name_arr,
+            ans:0,
+
         }
     }
 
@@ -20,12 +21,13 @@ export default class Home extends React.Component {
         let data = await fetch(url);
         let parsedData = await data.json();
         this.setState({
-            data_arr: parsedData.data.slice(0, 18),
+            data_arr: parsedData.data.slice(this.props.start,this.props.end),
         })
 
     }
     total = 0;
     handletotal = () => {
+        this.total = 0;
         for (let val of this.state.amt_arr) {
             this.total += parseFloat(val);
         }
@@ -33,8 +35,10 @@ export default class Home extends React.Component {
             {
                 ans: parseFloat(this.total.toFixed(3)),
             })
+        console.log(this.total);
         this.total = 0;
-        console.log(this.state.ans);
+
+
     }
     render() {
         return (
@@ -85,7 +89,7 @@ export default class Home extends React.Component {
 
 
 }
-
+ 
 
 
 

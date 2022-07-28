@@ -1,8 +1,7 @@
-import { useState } from "react";
 import CreditCard from "./CreditCard";
-import "./sidebar.css";
+import "./css/sidebar.css";
 
-export default function () {
+export default function Sidebar () {
     return (
         <>
             <div
@@ -27,9 +26,8 @@ export default function () {
                             }}
                             src="https://www.youtube.com/embed/pUdrK16ylyg"
                             title="YouTube video player"
-                            frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen
+                            allowFullScreen
                         ></iframe>
                     </div>
                     <br />

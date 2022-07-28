@@ -1,6 +1,7 @@
 
 import React from 'react';
-import './Navbar.css';
+import { Link } from 'react-router-dom';
+import './css/Navbar.css';
 import Rates from './Rates';
 
 export default class Navbar extends React.Component {
@@ -48,10 +49,10 @@ export default class Navbar extends React.Component {
               <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0 ms-4">
                   <li className="nav-item">
-                    <a
+                    <Link
                       className="nav-link active ms-3"
                       aria-current="page"
-                      href="#"
+                      to="/"
                       style={this.style}
                     >
                       <span>
@@ -60,22 +61,22 @@ export default class Navbar extends React.Component {
                         </span>
                         Home
                       </span>
-                    </a>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <a
+                    <Link
                       className="nav-link active ms-3"
                       aria-current="page"
-                      href="#"
+                      to="/two"
                       style={this.style}
                     >
                       <span>
                         <span style={{ marginRight: "0.4vw", }}>
                           <i className="fa-solid fa-chart-line"></i>
                         </span>
-                        Activity
+                        Next
                       </span>
-                    </a>
+                    </Link>
                   </li>
                 </ul>
                 <span id = "rates" style={{
