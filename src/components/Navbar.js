@@ -79,8 +79,6 @@ export default class Navbar extends React.Component {
                   </li>
                 </ul>
                 <span id = "rates" style={{
-                  overflowY:"hidden",
-                  overflowX:"scroll",
                 }}> 
                   {this.state.rate_arr.map((ele) => {
                     return (

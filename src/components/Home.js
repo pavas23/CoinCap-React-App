@@ -43,7 +43,7 @@ export default class Home extends React.Component {
                     marginLeft: "4vw",
                     marginTop: "2vh",
                     color: "white"
-                }}>Dashboard</h2>
+                }} >Dashboard</h2>
 
                 <p style={{ marginLeft: "4vw", color: "whitesmoke" }}><span id="headline">Begin the next gen of your investments with fastest cryptocurrency exchange...</span> &nbsp;&nbsp;
                     <span style={{ color: "gold" }}><i id="icon1" className="fa-brands fa-bitcoin fa-2x" ></i></span>
@@ -59,15 +59,14 @@ export default class Home extends React.Component {
                             );
                         })}
                     </div>
-                    <div className="row ms-4" style={{ marginTop: "50vh", marginLeft: "69vw", zIndex: "5" }}>
-                        <div className="col-12" style={{ marginLeft: "66vw" }} >
-                            
+                    <div className="row ms-4" style={{ marginTop: "65vh", marginLeft: "66vw", zIndex: "5" }}>
+                        <div className="col-12" style={{ marginLeft: "62vw" }} >
                             <h3 style={{ color: "white" }}>
-
+                                <img src="https://img.icons8.com/color/48/000000/shopping-cart-loaded.png" />
                                 Coins added to cart:</h3>
                         </div><br />
                         <div className="col-12" style={{
-                            marginLeft: "66vw", zIndex: "5",
+                            marginLeft: "62vw", zIndex: "0",
                             display: "flex",
                             justifyContent: "flex-start",
                             alignItems: "center"

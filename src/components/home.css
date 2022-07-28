@@ -1,9 +1,6 @@
-
-
 #icon1{
     animation: rotate1 4s ease-in-out 0s infinite alternate;
 }
-
 #icon2{
     animation: rotate2 4s ease-in-out 0s infinite alternate;
 }
@@ -13,11 +10,27 @@
 
 #cardcurr:hover{
     transform:scale(1.09);
-    z-index: 2;
+    z-index: 0;
 }
-
 #headline{
-    animation: headline 2s ease-in-out 0s infinite alternate;
+    position: relative;
+}
+#headline::after{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    content: "|";
+    color:white;
+    background-color: black;
+    animation: typeanim 20s steps(76) 0s infinite alternate;
+}
+@keyframes typeanim{
+    from{
+        width:100%
+    }
+    to{
+        width: 0%;
+    }
 }
 
 @keyframes headline {
@@ -29,7 +42,6 @@
 
     }
 }
-
 @keyframes rotate1{
     from{
         transform: scale(1) rotate(0deg);
@@ -39,7 +51,6 @@
         transform: scale(1.5) rotate(360deg);
     }
 }
-
 @keyframes rotate2{
     from{
         transform:scale(1) rotate(360deg);

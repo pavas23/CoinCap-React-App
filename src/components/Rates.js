@@ -1,5 +1,3 @@
-
-import './Rates.css';
 export default function Rates(props) {
 
     var color = (props.rateUsd >= 1) ? "green" : "red";

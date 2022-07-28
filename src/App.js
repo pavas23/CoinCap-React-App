@@ -8,7 +8,8 @@ import Sidebar from './components/Sidebar';
 
 export default function App(){
   // document.body.style.background = "linear-gradient(120deg,#233A4E, #9C6DB0)"
-  document.body.style.backgroundColor = "black"
+  document.body.style.backgroundColor = "black";
+  document.body.style.overflowX="hidden";
 
   return(
     <>
@@ -22,8 +23,6 @@ export default function App(){
         <Sidebar/>
       </div>
     </main>
-
-
     </>
   );
 }

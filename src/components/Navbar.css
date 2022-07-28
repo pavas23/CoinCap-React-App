@@ -6,15 +6,15 @@
 
 
 #rates{
-    animation: transformanim 2s ease-in-out infinite alternate;
+    animation: transformanim 20s ease-in infinite;
 }
 
 @keyframes transformanim {
     from{
-        transform: translateX(-1vw);
+        transform: translateX(0vw);
     }
     to{
-        transform:translateX(1vw);
+        transform:translateX(65vw);
 
 
     }
