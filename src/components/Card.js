@@ -1,5 +1,5 @@
-
-import React, { useState } from "react"
+import './css/card.css';
+import React, { useState } from "react";
 
 export default function Card(props) {
     const [stateBackground, setColor] = useState("#0c3c4c");
@@ -37,12 +37,12 @@ export default function Card(props) {
                 background:`${stateBackground}`,
                 color: "white",
                 transition:"all 1s"
-            }} >
+            }} id ="bitcard">
                 <div className="row g-0" style={{ width: "100%" }}>
                     <div className="col" style={{ width: "100%" }}>
                         <div className="card-body">
-                            <span style={{ display: "flex", justifyContent: "flex-start" }}>
-                                <span className="card-text col-1" style={{ fontSize: "1.3rem", marginRight: "1vw" }}>{props.rank}</span>
+                            <span style={{ display: "flex", justifyContent: "flex-start" }} id = "cardtxt">
+                                <span className="card-text col-1" id = "num" style={{ fontSize: "1.3rem", marginRight: "1vw" }}>{props.rank}</span>
                                 <span className="card-title col-8" style={{ fontSize: "1.3rem", textTransform: "capitalize", }}>{props.title}</span>
                                 <span className="card-title col-2" style={{ fontSize: "1rem", textTransform: "capitalize", }}>{props.symbol}</span>
                             </span>
@@ -51,7 +51,7 @@ export default function Card(props) {
                                 {{
                                     display: "flex",
                                     justifyContent: "flex-start"
-                                }}>
+                                }} id = "pricerow">
                                 <span className="card-text col-4" style ={{
                                     color:`${(props.priceUsd>=0.5)?txtcolor:txtcolor2}`,
                                     fontWeight:"bold"

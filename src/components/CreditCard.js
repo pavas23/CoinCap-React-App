@@ -13,8 +13,8 @@ export default function(){
                 <div className= "front">
                     <img src = {map} className = "map-img"/>
                     <div className="rowcard">
-                        <img src = {chip} style ={{width:"60px"}}/>
-                        <img src = {visa} style ={{width:"80px"}}/>
+                        <img src = {chip} style ={{width:"60px"}} id = "firstimg"/>
+                        <img src = {visa} style ={{width:"80px"}} id = "secondimg"/>
                     </div>
                     <div className ="rowcard card-no">
                         <p>5687</p>

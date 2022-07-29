@@ -62,3 +62,83 @@
 
 
 
+/* responsiveness */
+
+@media screen and (max-width:420px){
+    #headline{
+        font-size: 0.7rem;
+        display: inline-block;
+    }
+    #icon-para{
+        width: 50vw;
+    }
+    .container{
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-left: 0;
+        margin-right: 0;
+        width: 50vw;
+
+    }
+    #cardcurr{
+        width: 100%;
+        padding-left: 0px;
+
+    }
+    #num{
+        width: 7vw;
+    }
+    #coinrow{
+        margin-left: 2vw !important;
+        width: 92% !important;
+    }
+    .card-body{
+        padding-left: 0.7vh;
+    }
+    #pricerow{
+        margin-top: -2vh;
+        font-size: 0.5rem;
+    }
+    #pricerow .col-4{
+        width: 40%;
+    }
+    #pricerow .col-7{
+        margin-left: 2vw;
+    }
+    #cardtxt .col-1{
+        font-size: 0.8rem !important;
+    }
+    #cardtxt .col-8{
+        font-size: 0.65rem !important;
+    }
+    #cardtxt .col-2{
+        font-size: 0.4rem !important;
+    }
+    #total{
+        font-size: 0.8rem !important;
+        margin-top: 32vh !important;
+        margin-left: -12vw !important;
+    }
+    #total div h3{
+        font-size: 0.75rem;
+    }
+    #total button{
+        height: 4vh;
+        width: 13vh;
+        padding-top: 0;
+    }
+    #total button span{
+        font-size: 0.6rem;
+    }
+    #ans{
+        margin-left: -6.3vw;
+        font-size: 0.55rem !important;
+    }
+    #right-total-secondrow{
+        margin-top: -2vh;
+
+    }
+}
+
+
+

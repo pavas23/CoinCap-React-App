@@ -16,3 +16,9 @@ main {
   height: 215vh;
   width: 30%;
 }
+
+@media screen and (max-width:420px){
+  #right{
+    width: 50vw;
+  }
+}

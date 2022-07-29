@@ -15,6 +15,7 @@ export default function App(){
   // document.body.style.background = "linear-gradient(120deg,#233A4E, #9C6DB0)"
   document.body.style.backgroundColor = "black";
   document.body.style.overflowX="hidden";
+  document.body.style.overscrollBehaviorX = "none";
   var amt_arr = new Array(50).fill(0);
   var name_arr =  [];
 

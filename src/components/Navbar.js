@@ -36,6 +36,7 @@ export default class Navbar extends React.Component {
                 <b>₿ Coin Cap</b>
               </a>
               <button
+              id = "nav-btn"
                 className="navbar-toggler"
                 type="button"
                 data-bs-toggle="collapse"

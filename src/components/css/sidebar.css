@@ -30,6 +30,41 @@ button{
         opacity: 0.3;
     }
     to{
-        transform: rotateY(360deg) scale(1.5);
+        transform: rotateY(360deg) scale(1.3);
     }
+}
+
+
+@media screen and (max-width:420px){
+    #righthead{
+        font-size: 1.3rem;
+    }
+    #video{
+        height: 100%;
+    }
+    #videohead{
+        height: 10% !important;
+    }
+    #defhead{
+        margin-top: -7vh;
+        font-size: 1rem;
+    }
+    #bal{
+        font-size: 0.7rem;
+    }
+    #aboutus div span{
+        font-size: 1.2rem !important;
+    }
+    #aboutus div .detail{
+        font-size: 0.7rem !important;
+    }
+    #aboutus{
+        margin-top: 8vh;
+        margin-left: 2vw;
+    }
+    #bitanimation{
+        margin-top: 30vh;
+    }
+
+
 }

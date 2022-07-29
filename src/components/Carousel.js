@@ -1,4 +1,5 @@
 
+import './css/Carousel.css';
 export default function Carousel() {
     let myStyle = {
         height: 50 + "vh",

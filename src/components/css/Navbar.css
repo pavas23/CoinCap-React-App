@@ -19,3 +19,10 @@
 
     }
 }
+
+@media screen and (max-width:420px){
+    #nav-btn{
+        background-color: white !important;
+        z-index: -10 !important;
+    }
+}
