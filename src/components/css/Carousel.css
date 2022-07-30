@@ -1,16 +1,15 @@
-
-@media screen and (max-width:420px){
-    .carousel{
-        height: 40vh;
-    }
-    .carousel-inner{
-        height: 100%;
-    }
-    .carousel-item img{
-        height: 100% !important;
-    }
-    .carousel-item{
-        height:100%;
-    }
+@media screen and (max-width: 420px) {
+  .carousel {
+    height: 30vh;
+    margin-top: 6vh;
+  }
+  .carousel-inner {
+    height: 100%;
+  }
+  .carousel-item img {
+    height: 100% !important;
+  }
+  .carousel-item {
+    height: 100%;
+  }
 }
-

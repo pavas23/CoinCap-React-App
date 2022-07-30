@@ -2,14 +2,6 @@ import CreditCard from "./CreditCard";
 import "./css/sidebar.css";
 
 export default function Sidebar() {
-
-    // function iconsize(){
-    //     var icon = document.getElementsByClassName("fa-solid");
-    //     for(val of icon){
-    //         val.className = "fa-x";
-    //     }
-    // }
-
     return (
         <>
             <div
@@ -38,11 +30,7 @@ export default function Sidebar() {
                             allowFullScreen
                             id="video"
                         ></iframe>
-                    </div>
-                    <br />
-                    <br />
-                    <br />
-                    <br />
+                    </div><br /><br /><br /><br />
                     <h4 id="defhead">
                         Default Payment Card&nbsp;
                         <span style={{ color: "gold" }}>
@@ -54,12 +42,7 @@ export default function Sidebar() {
                     <br />
                     <div id="display" style={{ height: "18%", width: "95%" }}>
                         <CreditCard />
-                    </div>
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
+                    </div><br /><br /><br /><br /><br />
                     <div id="aboutus">
                         <div>
                             <i
@@ -76,9 +59,7 @@ export default function Sidebar() {
                             </span>
                             <br /><span className="detail">
                                 Get it on PC or mobile to create,send and receive bitcoins.</span>
-                        </div>
-                        <br />
-                        <br />
+                        </div><br /><br />
                         <div>
                             <i
                                 className="fa-solid fa-bitcoin-sign fa-2x"
@@ -95,9 +76,7 @@ export default function Sidebar() {
                             <br /><span className="detail">
                                 Enter receiver's address specify the amount and
                                 <br /> send</span>
-                        </div>
-                        <br />
-                        <br />
+                        </div><br /><br />
                         <div>
                             <i
                                 className="fa-solid fa-sack-dollar fa-2x"
