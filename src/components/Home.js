@@ -11,7 +11,7 @@ export default class Home extends React.Component {
             data_arr: [],
             amt_arr: this.props.amt_arr,
             name_arr: this.props.name_arr,
-            ans:0,
+            ans: 0,
 
         }
     }
@@ -21,7 +21,7 @@ export default class Home extends React.Component {
         let data = await fetch(url);
         let parsedData = await data.json();
         this.setState({
-            data_arr: parsedData.data.slice(this.props.start,this.props.end),
+            data_arr: parsedData.data.slice(this.props.start, this.props.end),
         })
 
     }
@@ -49,11 +49,11 @@ export default class Home extends React.Component {
                     color: "white"
                 }} >Dashboard</h2>
 
-                <p  id = "icon-para" style={{ marginLeft: "4vw", color: "whitesmoke" }}><span id="headline">Begin the next gen of your investments with fastest cryptocurrency exchange...</span> &nbsp;&nbsp;
-                    <span style={{ color: "gold" }}><i id="icon1" className="fa-brands fa-bitcoin fa-x" ></i></span>
-                    &nbsp;Vs&nbsp; <span style={{ color: "#A30774" }}><i id="icon2" className="fa-brands fa-ethereum fa-x"></i></span></p>
+                <p id="icon-para" style={{ marginLeft: "4vw", color: "whitesmoke" }}><span id="headline">Begin the next gen of your investments with fastest cryptocurrency exchange...</span> &nbsp;&nbsp;
+                    <span style={{ color: "gold" }}><i id="icon1" className="fa-brands fa-bitcoin fa-2x" ></i></span>
+                    &nbsp;Vs&nbsp; <span style={{ color: "#A30774" }}><i id="icon2" className="fa-brands fa-ethereum fa-2x"></i></span></p>
                 <div className="container">
-                    <div className="row ms-4" id = "coinrow" style={{ height: 20 + "vh", width: "100%" }}>
+                    <div className="row ms-4" id="coinrow" style={{ height: 20 + "vh", width: "100%" }}>
                         {this.state.data_arr.map((element) => {
                             return (
                                 <div className="col-5 my-2" id="cardcurr" key={element.id}>
@@ -63,7 +63,7 @@ export default class Home extends React.Component {
                             );
                         })}
                     </div>
-                    <div className="row ms-4" style={{ marginTop: "65vh", marginLeft: "66vw", zIndex: "5" }} id = "total">
+                    <div className="row ms-4" style={{ marginTop: "65vh", marginLeft: "66vw", zIndex: "5" }} id="total">
                         <div className="col-12" style={{ marginLeft: "62vw" }} >
                             <h3 style={{ color: "white" }}>
                                 <img src="https://img.icons8.com/color/48/000000/shopping-cart-loaded.png" />
@@ -74,10 +74,10 @@ export default class Home extends React.Component {
                             display: "flex",
                             justifyContent: "flex-start",
                             alignItems: "center"
-                        }} id = "right-total-secondrow">
+                        }} id="right-total-secondrow">
                             <button type="button" className="btn btn-dark ms-0 me-4" onClick={this.handletotal}>
-                                <span style={{ color: "white" }}>Total Amount</span></button>&nbsp;&nbsp;
-                            <span style={{ color: "white", fontSize: "1.8rem", }} id = "ans">${this.state.ans}</span>
+                                <span style={{ color: "white", fontSize: "1.3rem" }}>Total Amount</span></button>&nbsp;&nbsp;
+                            <span style={{ color: "white", fontSize: "1.8rem", }} id="ans">${this.state.ans}</span>
                         </div><br /><br />
 
                     </div>
@@ -89,7 +89,7 @@ export default class Home extends React.Component {
 
 
 }
- 
+
 
 
 

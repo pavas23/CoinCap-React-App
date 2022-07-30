@@ -1,7 +1,12 @@
 
 @media screen and (max-width:420px){
     #bitcard{
-        height: 12vh !important;
+        height: 10vh !important;
     }
 }
 
+@media screen and (max-height:750px){
+    #bitcard{
+        height: 13vh !important;
+    }
+}

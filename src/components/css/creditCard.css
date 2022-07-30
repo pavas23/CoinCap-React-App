@@ -91,7 +91,7 @@
 
 @media screen and (max-width:420px){
     .card{
-        height: 17vh !important;
+        height: 15vh !important;
         width: 112% !important;
     }
     #firstimg{
@@ -127,5 +127,12 @@
     }
     .sign img{
         width: 40px;
+    }
+}
+
+@media screen and (max-height:750px){
+    .card{
+        height: 20vh !important;
+        width: 114% !important;
     }
 }

@@ -1,144 +1,159 @@
-#icon1{
-    animation: rotate1 4s ease-in-out 0s infinite alternate;
+#icon1 {
+  animation: rotate1 4s ease-in-out 0s infinite alternate;
 }
-#icon2{
-    animation: rotate2 4s ease-in-out 0s infinite alternate;
+#icon2 {
+  animation: rotate2 4s ease-in-out 0s infinite alternate;
 }
-#cardcurr{
-    transition: all 1s;
+#cardcurr {
+  transition: all 1s;
 }
 
-#cardcurr:hover{
-    transform:scale(1.09);
-    z-index: 0;
+#cardcurr:hover {
+  transform: scale(1.09);
+  z-index: 0;
 }
-#headline{
-    position: relative;
+#headline {
+  position: relative;
 }
-#headline::after{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    content: "|";
-    color:white;
-    background-color: black;
-    animation: typeanim 20s steps(76) 0s infinite alternate;
+#headline::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  content: "|";
+  color: white;
+  background-color: black;
+  animation: typeanim 20s steps(76) 0s infinite alternate;
 }
-@keyframes typeanim{
-    from{
-        width:100%
-    }
-    to{
-        width: 0%;
-    }
+@keyframes typeanim {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
 }
 
 @keyframes headline {
-    from{
-    }
-    to{
-        width: 100%;
-
-
-    }
+  from {
+  }
+  to {
+    width: 100%;
+  }
 }
-@keyframes rotate1{
-    from{
-        transform: scale(1) rotate(0deg);
-
-    }
-    100%{
-        transform: scale(1.5) rotate(360deg);
-    }
+@keyframes rotate1 {
+  from {
+    transform: scale(1) rotate(0deg);
+  }
+  100% {
+    transform: scale(1.5) rotate(360deg);
+  }
 }
-@keyframes rotate2{
-    from{
-        transform:scale(1) rotate(360deg);
-    }
-    100%{
-        transform:scale(1.5) rotate(0deg);
-    }
+@keyframes rotate2 {
+  from {
+    transform: scale(1) rotate(360deg);
+  }
+  100% {
+    transform: scale(1.5) rotate(0deg);
+  }
 }
-
-
 
 /* responsiveness */
 
-@media screen and (max-width:420px){
-    #headline{
-        font-size: 0.7rem;
-        display: inline-block;
-    }
-    #icon-para{
-        width: 50vw;
-    }
-    .container{
-        padding-left: 0px;
-        padding-right: 0px;
-        margin-left: 0;
-        margin-right: 0;
-        width: 50vw;
-
-    }
-    #cardcurr{
-        width: 100%;
-        padding-left: 0px;
-
-    }
-    #num{
-        width: 7vw;
-    }
-    #coinrow{
-        margin-left: 2vw !important;
-        width: 92% !important;
-    }
-    .card-body{
-        padding-left: 0.7vh;
-    }
-    #pricerow{
-        margin-top: -2vh;
-        font-size: 0.5rem;
-    }
-    #pricerow .col-4{
-        width: 40%;
-    }
-    #pricerow .col-7{
-        margin-left: 2vw;
-    }
-    #cardtxt .col-1{
-        font-size: 0.8rem !important;
-    }
-    #cardtxt .col-8{
-        font-size: 0.65rem !important;
-    }
-    #cardtxt .col-2{
-        font-size: 0.4rem !important;
-    }
-    #total{
-        font-size: 0.8rem !important;
-        margin-top: 32vh !important;
-        margin-left: -12vw !important;
-    }
-    #total div h3{
-        font-size: 0.75rem;
-    }
-    #total button{
-        height: 4vh;
-        width: 13vh;
-        padding-top: 0;
-    }
-    #total button span{
-        font-size: 0.6rem;
-    }
-    #ans{
-        margin-left: -6.3vw;
-        font-size: 0.55rem !important;
-    }
-    #right-total-secondrow{
-        margin-top: -2vh;
-
-    }
+@media screen and (max-width: 420px) {
+  #headline {
+    font-size: 0.7rem;
+    display: inline-block;
+  }
+  #headline::after{
+    animation: typeanim 20s steps(60) 0s infinite alternate;
+  }
+  #icon-para {
+    width: 50vw;
+  }
+  .container {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 50vw;
+  }
+  #cardcurr {
+    width: 100%;
+    padding-left: 0px;
+  }
+  #num {
+    width: 7vw;
+  }
+  #coinrow {
+    margin-left: 2vw !important;
+    width: 92% !important;
+  }
+  .card-body {
+    padding-left: 0.7vh;
+  }
+  #pricerow {
+    margin-top: -2vh;
+    font-size: 0.5rem;
+  }
+  #pricerow .col-4 {
+    width: 40%;
+  }
+  #pricerow .col-7 {
+    margin-left: 2vw;
+  }
+  #cardtxt .col-1 {
+    font-size: 0.8rem !important;
+  }
+  #cardtxt .col-8 {
+    font-size: 0.65rem !important;
+  }
+  #cardtxt .col-2 {
+    font-size: 0.4rem !important;
+  }
+  #total {
+    font-size: 0.8rem !important;
+    margin-top: 26vh !important;
+    margin-left: -12vw !important;
+  }
+  #total div h3 {
+    font-size: 0.8rem;
+  }
+  #total button {
+    height: 4vh;
+    width: 13vh;
+    padding-top: 0;
+  }
+  #total button span {
+    font-size: 0.6rem !important;
+  }
+  #ans {
+    margin-left: -6.3vw;
+    font-size: 0.55rem !important;
+  }
+  #right-total-secondrow {
+    margin-top: -2vh;
+  }
+  #total div h3 img{
+    height: 4vh;
+    width: 4vh;
+}
+#icon1,#icon2{
+    font-size: 1rem;
+}
 }
 
-
-
+@media screen and (max-height: 750px) {
+  #total {
+    font-size: 0.8rem !important;
+    margin-top: 36vh !important;
+    margin-left: -12vw !important;
+  }
+  #total button {
+    height: 6vh;
+    width: 13vh;
+    padding-top: 0;
+  }
+  #total button span {
+    font-size: 0.5rem !important;
+  }
+}

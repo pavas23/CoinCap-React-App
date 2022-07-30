@@ -1,70 +1,87 @@
-#display{
-    height: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
+#display {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-button{
-    margin-left: 30%;
+button {
+  margin-left: 30%;
 }
-#aboutus{
-    width: 100%;
-    height: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin-top:20vh;
-    align-items: flex-start;
+#aboutus {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 20vh;
+  align-items: flex-start;
 }
-#bitanimation{
-    margin-top:20vh;
-    margin-left: 5vw;
-    color:gold;
-    animation: bitcoin 4s ease-in-out 0s infinite alternate;
+#bitanimation {
+  margin-top: 20vh;
+  margin-left: 5vw;
+  color: gold;
+  animation: bitcoin 4s ease-in-out 0s infinite alternate;
 }
-@keyframes bitcoin{
-    from{
-        transform: rotateY(0deg);
-        opacity: 0.3;
-    }
-    to{
-        transform: rotateY(360deg) scale(1.3);
-    }
+@keyframes bitcoin {
+  from {
+    transform: rotateY(0deg);
+    opacity: 0.3;
+  }
+  to {
+    transform: rotateY(360deg) scale(1.5);
+  }
 }
 
+@keyframes bitcoinsmall {
+  from {
+    transform: rotateY(0deg);
+    opacity: 0.3;
+  }
+  to {
+    transform: rotateY(360deg) scale(1.05);
+  }
+}
 
-@media screen and (max-width:420px){
-    #righthead{
-        font-size: 1.3rem;
-    }
-    #video{
-        height: 100%;
-    }
-    #videohead{
-        height: 10% !important;
-    }
-    #defhead{
-        margin-top: -7vh;
-        font-size: 1rem;
-    }
-    #bal{
-        font-size: 0.7rem;
-    }
-    #aboutus div span{
-        font-size: 1.2rem !important;
-    }
-    #aboutus div .detail{
-        font-size: 0.7rem !important;
-    }
-    #aboutus{
-        margin-top: 8vh;
-        margin-left: 2vw;
-    }
-    #bitanimation{
-        margin-top: 30vh;
-    }
+@media screen and (max-width: 420px) {
+  #righthead {
+    font-size: 1.3rem;
+  }
+  #video {
+    height: 100%;
+  }
+  #videohead {
+    height: 10% !important;
+  }
+  #defhead {
+    margin-top: -7vh;
+    font-size: 1rem;
+  }
+  #bal {
+    font-size: 0.7rem;
+  }
+  #aboutus div span {
+    font-size: 1.2rem !important;
+  }
+  #aboutus div .detail {
+    font-size: 0.7rem !important;
+  }
+  #aboutus {
+    margin-top: 0vh;
+    margin-left: 2vw;
+  }
+  #bitanimation {
+    margin-top: 30vh;
+    animation: bitcoinsmall 4s ease-in-out 0s infinite alternate;
+  }
+  .fa-solid{
+      font-size: 1.2rem;
+  }
+}
 
-
+@media screen and (max-height: 750px) {
+  #aboutus {
+    margin-top: 13vh;
+    margin-left: 2vw;
+  }
 }

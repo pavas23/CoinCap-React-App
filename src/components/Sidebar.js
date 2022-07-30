@@ -1,7 +1,15 @@
 import CreditCard from "./CreditCard";
 import "./css/sidebar.css";
 
-export default function Sidebar () {
+export default function Sidebar() {
+
+    // function iconsize(){
+    //     var icon = document.getElementsByClassName("fa-solid");
+    //     for(val of icon){
+    //         val.className = "fa-x";
+    //     }
+    // }
+
     return (
         <>
             <div
@@ -13,10 +21,10 @@ export default function Sidebar () {
                     marginLeft: "-4vw",
                 }}
             >
-                <h3 id = "righthead">Latest Updates</h3>
+                <h3 id="righthead">Latest Updates</h3>
                 <br />
                 <div style={{ width: "100%", height: "80%" }}>
-                    <div style={{ width: "100%", height: "15%" }} id = "videohead">
+                    <div style={{ width: "100%", height: "15%" }} id="videohead">
                         <iframe
                             width="104%"
                             height="130%"
@@ -28,21 +36,21 @@ export default function Sidebar () {
                             title="YouTube video player"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
-                            id = "video"
+                            id="video"
                         ></iframe>
                     </div>
                     <br />
                     <br />
                     <br />
                     <br />
-                    <h4 id = "defhead">
+                    <h4 id="defhead">
                         Default Payment Card&nbsp;
                         <span style={{ color: "gold" }}>
                             <i className="fa-brands fa-bitcoin"></i>
                         </span>
                     </h4>
                     <br />
-                    <h6 id = "bal">Balance: $2879.56</h6>
+                    <h6 id="bal">Balance: $2879.56</h6>
                     <br />
                     <div id="display" style={{ height: "18%", width: "95%" }}>
                         <CreditCard />
@@ -66,8 +74,8 @@ export default function Sidebar () {
                             >
                                 Download Bitcoin Wallet
                             </span>
-                            <br /><span class = "detail">
-                            Get it on PC or mobile to create,send and receive bitcoins.</span>
+                            <br /><span className="detail">
+                                Get it on PC or mobile to create,send and receive bitcoins.</span>
                         </div>
                         <br />
                         <br />
@@ -84,9 +92,9 @@ export default function Sidebar () {
                             >
                                 Buy/Sell with Wallet
                             </span>
-                            <br /><span class = "detail">
-                            Enter receiver's address specify the amount and
-                            <br /> send</span>
+                            <br /><span className="detail">
+                                Enter receiver's address specify the amount and
+                                <br /> send</span>
                         </div>
                         <br />
                         <br />
@@ -104,8 +112,8 @@ export default function Sidebar () {
                                 Add coins to your Wallet
                             </span>
                             <br />
-                            <span class = "detail">
-                            Add bitcoins you've created or exchanged via <br /> credit card</span>
+                            <span className="detail">
+                                Add bitcoins you've created or exchanged via <br /> credit card</span>
                         </div>
                     </div>
                     <div>

@@ -18,6 +18,10 @@ main {
 }
 
 @media screen and (max-width:420px){
+  main{
+    overflow-x: clip;
+
+  }
   #right{
     width: 50vw;
   }

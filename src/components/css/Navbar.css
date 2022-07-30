@@ -1,28 +1,37 @@
-.navbar{
-    background-color: black !important;
-    z-index: 3;
+.navbar {
+  background-color: black !important;
+  z-index: 3;
 }
 
-
-
-#rates{
-    animation: transformanim 20s ease-in infinite;
+#rates {
+  animation: transformanim 20s ease-in infinite;
 }
 
 @keyframes transformanim {
-    from{
-        transform: translateX(0vw);
-    }
-    to{
-        transform:translateX(65vw);
-
-
-    }
+  from {
+    transform: translateX(0vw);
+  }
+  to {
+    transform: translateX(65vw);
+  }
 }
 
-@media screen and (max-width:420px){
-    #nav-btn{
-        background-color: white !important;
-        z-index: -10 !important;
-    }
+@media screen and (max-width: 420px) {
+  #nav-btn {
+    background-color: white !important;
+    z-index: -10 !important;
+    height: 4vh;
+    width: 6vh;
+    padding: 0;
+    border: 1px solid black;
+  }
+}
+
+@media screen and (max-height: 750px) {
+  #nav-btn {
+    height: 5vh;
+    width: 6vh;
+    padding: 0;
+    border: 1px solid black;
+  }
 }
